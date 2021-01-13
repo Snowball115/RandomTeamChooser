@@ -17,7 +17,7 @@ int main()
     while (isRunning)
     {
         std::cout << "==== Choose Tool ====\n";
-        std::cout << "1. Map chooser\n2. Random team generator\n\n";
+        std::cout << "1. Map chooser\n2. Random team generator\n3. Exit program\n\n";
         std::cout << "Your number: ";
         std::string userInput;
 
