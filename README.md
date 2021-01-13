@@ -1,2 +1,2 @@
 ## Description
-Just a silly little tool to split players in random teams.
+Just a silly little tool to split players into random teams.
