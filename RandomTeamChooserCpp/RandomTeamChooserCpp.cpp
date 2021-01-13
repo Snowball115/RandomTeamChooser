@@ -14,25 +14,29 @@ bool isRunning = true;
 
 int main()
 {
-    std::cout << "==== Choose Tool ====\n";
-    std::cout << "1. Map chooser\n2. Random team generator\n\n";
-    std::cout << "Your number: ";
-    std::string userInput;
-
     while (isRunning)
     {
+        std::cout << "==== Choose Tool ====\n";
+        std::cout << "1. Map chooser\n2. Random team generator\n\n";
+        std::cout << "Your number: ";
+        std::string userInput;
+
         std::cin >> userInput;
         switch (stoi(userInput))
         {
         case 1:
             system("CLS");
             m_mapTool->ChooseMap();
-            isRunning = false;
+            system("CLS");
             break;
 
         case 2:
             system("CLS");
             m_teamTool->GenerateTeams();
+            system("CLS");
+            break;
+
+        case 3:
             isRunning = false;
             break;
 

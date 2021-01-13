@@ -8,24 +8,28 @@ namespace RandomTeamChooser
 
         static void Main(string[] args)
         {
-            Console.WriteLine("==== Choose Tool ====");
-            Console.Write("\n1. Map chooser\n2. Random team generator\n\n");
-            Console.Write("Your number: ");
-
             while (isRunning)
             {
+                Console.WriteLine("==== Choose Tool ====");
+                Console.Write("\n1. Map chooser\n2. Random team generator\n3. Exit program\n\n");
+                Console.Write("Your number: ");
+
                 string userInput = Console.ReadLine();
                 switch (userInput)
                 {
                     case "1":
                         Console.Clear();
                         MapTool.ChooseMap();
-                        isRunning = false;
+                        Console.Clear();
                         break;
 
                     case "2":
                         Console.Clear();
                         TeamTool.GenerateTeams();
+                        Console.Clear();
+                        break;
+
+                    case "3":
                         isRunning = false;
                         break;
 
