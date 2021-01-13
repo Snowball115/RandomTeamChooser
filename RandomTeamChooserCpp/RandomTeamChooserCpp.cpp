@@ -18,10 +18,11 @@ int main()
     {
         std::cout << "==== Choose Tool ====\n\n";
         std::cout << "1. Map chooser\n2. Random team generator\n3. Exit program\n\n";
-        std::cout << "Your number: ";
-        std::string userInput;
+        std::cout << "Your choice: ";
 
+        std::string userInput;
         std::cin >> userInput;
+
         switch (stoi(userInput))
         {
         case 1:

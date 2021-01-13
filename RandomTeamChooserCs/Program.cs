@@ -12,9 +12,10 @@ namespace RandomTeamChooser
             {
                 Console.WriteLine("==== Choose Tool ====");
                 Console.Write("\n1. Map chooser\n2. Random team generator\n3. Exit program\n\n");
-                Console.Write("Your number: ");
+                Console.Write("Your choice: ");
 
                 string userInput = Console.ReadLine();
+
                 switch (userInput)
                 {
                     case "1":
