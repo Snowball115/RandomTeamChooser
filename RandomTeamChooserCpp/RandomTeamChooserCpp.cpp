@@ -41,8 +41,8 @@ int main()
             break;
 
         default:
+            system("CLS");
             std::cout << "No valid input detected. Please choose again.\n\n";
-            std::cout << "Your number: ";
             break;
         }
     }

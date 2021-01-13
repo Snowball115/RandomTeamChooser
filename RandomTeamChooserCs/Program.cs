@@ -34,8 +34,8 @@ namespace RandomTeamChooser
                         break;
 
                     default:
+                        Console.Clear();
                         Console.WriteLine("No valid input detected. Please choose again.\n");
-                        Console.Write("Your number: ");
                         break;
                 }
             } 
