@@ -1,2 +1,2 @@
 ## Description
-Just a silly little tool to split players into random teams.
+Just a silly little console app, which splits players into random teams.
