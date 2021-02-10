@@ -3,7 +3,7 @@
 void MapTool::ChooseMap()
 {
     std::cout << "==== MAP TOOL ====\n\n";
-    std::cout << "Choose game: 1. Valorant // 2. CoD MW2\n";
+    std::cout << "1. Valorant\n" << "2. CoD MW2\n\n";
     std::cout << "Your choice: ";
 
     std::string userInput;
