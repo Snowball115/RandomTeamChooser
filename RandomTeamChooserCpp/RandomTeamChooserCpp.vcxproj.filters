@@ -24,12 +24,18 @@
     <ClCompile Include="MapTool.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="TeamSideTool.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TeamTool.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="MapTool.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="TeamSideTool.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

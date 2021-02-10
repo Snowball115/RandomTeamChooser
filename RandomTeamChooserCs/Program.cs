@@ -11,7 +11,7 @@ namespace RandomTeamChooser
             while (isRunning)
             {
                 Console.WriteLine("==== Choose Tool ====");
-                Console.Write("\n1. Map chooser\n2. Random team generator\n3. Exit program\n\n");
+                Console.WriteLine("\n1. Map chooser\n2. Random team generator\n3. Team side chooser\n4. Exit program\n\n");
                 Console.Write("Your choice: ");
 
                 string userInput = Console.ReadLine();
@@ -31,6 +31,12 @@ namespace RandomTeamChooser
                         break;
 
                     case "3":
+                        Console.Clear();
+                        TeamSideTool.ChooseTeam();
+                        Console.Clear();
+                        break;
+
+                    case "4":
                         isRunning = false;
                         break;
 

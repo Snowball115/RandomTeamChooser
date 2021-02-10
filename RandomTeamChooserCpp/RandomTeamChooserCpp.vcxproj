@@ -142,10 +142,12 @@
   <ItemGroup>
     <ClCompile Include="MapTool.cpp" />
     <ClCompile Include="RandomTeamChooserCpp.cpp" />
+    <ClCompile Include="TeamSideTool.cpp" />
     <ClCompile Include="TeamTool.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MapTool.h" />
+    <ClInclude Include="TeamSideTool.h" />
     <ClInclude Include="TeamTool.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

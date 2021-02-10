@@ -3,12 +3,14 @@
 
 #include "TeamTool.h"
 #include "MapTool.h"
+#include "TeamSideTool.h"
 
 //std::unique_ptr<MapTool> m_mapTool;
 //std::unique_ptr<TeamTool> m_teamTool;
 
 MapTool* m_mapTool = new MapTool();
 TeamTool* m_teamTool = new TeamTool();
+TeamSideTool* m_teamSideTool = new TeamSideTool();
 
 bool isRunning = true;
 
@@ -17,7 +19,7 @@ int main()
     while (isRunning)
     {
         std::cout << "==== Choose Tool ====\n\n";
-        std::cout << "1. Map chooser\n2. Random team generator\n3. Exit program\n\n";
+        std::cout << "1. Map chooser\n2. Random team generator\n3. Team side chooser\n4. Exit program\n\n";
         std::cout << "Your choice: ";
 
         std::string userInput;
@@ -38,6 +40,12 @@ int main()
             break;
 
         case 3:
+            system("CLS");
+            m_teamSideTool->ChooseMap();
+            system("CLS");
+            break;
+
+        case 4:
             isRunning = false;
             break;
 
@@ -50,4 +58,5 @@ int main()
 
     delete m_mapTool;
     delete m_teamTool;
+    delete m_teamSideTool;
 }
