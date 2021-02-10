@@ -8,6 +8,7 @@ void MapTool::ChooseMap()
 
     std::string userInput;
     std::cin >> userInput;
+    std::cout << "\n";
 
     std::vector<std::string> gameMaps = chooseGameMaps(userInput);
 
@@ -25,8 +26,6 @@ void MapTool::ChooseMap()
 std::vector<std::string> MapTool::chooseGameMaps(std::string userInput)
 {
     std::vector<std::string> tmpList;
-
-    std::cin >> userInput;
 
     switch (stoi(userInput))
     {
